@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>THE CODE REVIEW</title>
+</head>
+<body>
+    <header class="main-header">
+        <h2>THE CODE REVIEW</h2>
+        <h3>Signup for our newletter</h1>
+            <div>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+    </header>
+
+
+    <form action="codeReview.html" method="POST">
+        <hr class="hr-1">
+
+
+        <fieldset class="contact"> 
+            
+            <legend>Contact Information</legend>
+
+            <div class="aligned_form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required" 
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Required'" required>
+            </div>
+
+            <div class="aligned_form">
+                <label for="email">Email Address </label>
+                <input type="email" id="email" name="user_email" placeholder="Required" 
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Required'" required>
+            </div>
+
+            <div class="aligned_form">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="user_phone">
+            </div>
+
+            <div class="aligned_form">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address">
+            </div>
+
+            <div class="aligned_form">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
+            </div>
+
+            <div class="aligned_form">
+                <label for="state">State</label>
+                <select  id="state" name="user_state">
+                    <option value="" disabled selected hidden>Choose State</option>
+                    <option value="ahmadi_governorate">Ahmadi</option>
+                    <option value="al_asimah_governorate">Al-Asimah</option>
+                    <option value="farwaniya_governorate">Farwaniya</option>
+                    <option value="hawalli_governorate">Hawalli</option>
+                    <option value="jahra_governorate">Jahra </option>
+                    <option value="mubarak_al_kabeer_governorate">Mubarak Al-Kabeer</option>
+                </select>
+            </div>
+
+            <div class="aligned_form">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="user_zipcode" >
+            </div>
+        </fieldset>
+        
+        <hr class="hr-2">
+        <fieldset>
+            <legend>Newsletter</legend>
+            
+            <div>
+                <label class="space">Select the newsletter you would like to receive</label>
+                <input type="checkbox" id="html_news" value="newsletter_html" name="user_newsletter">
+                <label class="light" for="html_news">HTML News</label><br>
+
+                <input type="checkbox" id="css_news" value="newsletter_css" name="user_newsletter">
+                <label class="light" for="css_news">CSS News</label><br>
+
+                <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="user_newsletter">
+                <label class="light" for="javascript_news">Javascript News</label>
+
+                <label class="space">Newsletter format</label>
+                <input type="radio" id="html_format" value="html_format" name="user_format">
+                <label for="html_format" class="light">HTML</label><br>
+
+                <input type="radio" id="plaintext_format" value="plaintext_format" name="user_format">
+                <label for="plaintext_format" class="light">Plain text</label>
+
+                <label for="othertopics" class="space">Other topics you'd like to hear about</label>
+                <textarea id="othertopics" name="othertopics"></textarea>
+            </div>
+        </fieldset>
+            
+            <button type="submit">Sign Up</button>
+    </form>
+
+    <footer class="main-footer">
+        <p class="copyright">Copyright The Code Review </p>
+    </footer>
+</body>
+</html>
