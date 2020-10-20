@@ -62,7 +62,7 @@ legend{
 label{
   font-family: 'Markazi Text', serif;
   color: #7c8592;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: lighter;
   display: block;
   margin-bottom: 10px;
@@ -192,9 +192,8 @@ fieldset {
 
 @media (min-width: 768px) {
 
-
   form {
-    width: 40%;
+    width: 47%;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
